@@ -1,5 +1,5 @@
 
-Question #1
+Question #1 ***MUST DO FIRST - Cluster broken***
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A kubeadm cluster was migrated to a new machine. Requires configuration changes 
 to run successfully. 
