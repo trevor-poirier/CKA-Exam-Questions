@@ -1,5 +1,5 @@
 # Q1 - Question only
-cat ./CKA-Exam-Questions/Q4/README.md
+cat ./CKA-Exam-Questions/Q1/README.md
 printf '\n'
 
 # Q4
