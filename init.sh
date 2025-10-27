@@ -104,10 +104,30 @@ kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 cat ./CKA-Exam-Questions/Q16/README.md
 printf '\n'
 
-# Command to copy to re-print a question
-printf 'To review a specific question later on, run this command below.\nWhere "Q#" is the letter Q followed by the question number (i.e. Q12):\n\ncat ./CKA-Exam-Questions/Q#/README.md\n\n'
-
 # Last thing to run from Q1 because it will break cluster
 DIR=$(shuf -i 1-8 -n 1)
 FILE=$(ls CKA-Exam-Questions/Q1/Scenarios/$DIR)
 cp -f CKA-Exam-Questions/Q1/Scenarios/$DIR/$FILE /etc/kubernetes/manifests/$FILE
+
+# Sleep for troubleshooting resource creation, then clear before showing all questions again
+sleep 15
+clear
+cat ./CKA-Exam-Questions/Q1/README.md
+cat ./CKA-Exam-Questions/Q2/README.md
+cat ./CKA-Exam-Questions/Q3/README.md
+cat ./CKA-Exam-Questions/Q4/README.md
+cat ./CKA-Exam-Questions/Q5/README.md
+cat ./CKA-Exam-Questions/Q6/README.md
+cat ./CKA-Exam-Questions/Q7/README.md
+cat ./CKA-Exam-Questions/Q8/README.md
+cat ./CKA-Exam-Questions/Q9/README.md
+cat ./CKA-Exam-Questions/Q10/README.md
+cat ./CKA-Exam-Questions/Q11/README.md
+cat ./CKA-Exam-Questions/Q12/README.md
+cat ./CKA-Exam-Questions/Q13/README.md
+cat ./CKA-Exam-Questions/Q14/README.md
+cat ./CKA-Exam-Questions/Q15/README.md
+cat ./CKA-Exam-Questions/Q16/README.md
+
+# Command to copy to re-print a question
+printf '\nTo review a specific question later on, run this command below.\nWhere "Q#" is the letter Q followed by the question number (i.e. Q12):\n\ncat ./CKA-Exam-Questions/Q#/README.md\n\n'
