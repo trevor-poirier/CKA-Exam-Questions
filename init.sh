@@ -105,7 +105,7 @@ cat ./CKA-Exam-Questions/Q16/README.md
 printf '\n'
 
 # Command to copy to re-print a question
-printf 'To review a specific question later on, run this command,\nwhere "Q#" is the letter Q followed by the question number (i.e. Q12):\ncat ./CKA-Exam-Questions/Q#/README.md'
+printf 'To review a specific question later on, run this command,\nwhere "Q#" is the letter Q followed by the question number (i.e. Q12):\ncat ./CKA-Exam-Questions/Q#/README.md\n'
 
 # Last thing to run from Q1 because it will break cluster
 DIR=$(shuf -i 1-8 -n 1)
