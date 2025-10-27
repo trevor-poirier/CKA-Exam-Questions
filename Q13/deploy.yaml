@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox-logger
+  namespace: priority
+  labels:
+    app: busybox-logger
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: busybox-logger
+  template:
+    metadata:
+      labels:
+        app: busybox-logger
+    spec:
+      containers:
+      - name: logger
+        image: busybox:stable
+        imagePullPolicy: IfNotPresent
+        command: [ "/bin/sh", "-c" ]
+        args:
+        - while true; do echo "$(date) - Log message from busybox-logger"; sleep 5; done
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+---       
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: other
+  namespace: priority
+  labels:
+    app: other
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: other
+  template:
+    metadata:
+      labels:
+        app: other
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:latest
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 50m
+            memory: 64Mi
+

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: synergy-deployment
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: synergy
+  template:
+    metadata:
+      labels:
+        app: synergy
+    spec:
+      containers:
+      - name: legacy-app
+        image: busybox:stable
+        command: [ "/bin/sh", "-c" ]
+        args:
+        - |
+          while true; do
+            echo "$(date) - legacy app log entry" >> /var/log/synergy-deployment.log;
+            sleep 5;
+            done

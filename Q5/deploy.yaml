@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-static
+  namespace: nginx-static
+spec:
+  selector:
+    matchLabels:
+      run: nginx-static
+  template:
+    metadata:
+      labels:
+        run: nginx-static
+    spec:
+      containers:
+      - name: web
+        image: nginx
+        ports:
+        - name: web
+          containerPort: 80
+          protocol: TCP
