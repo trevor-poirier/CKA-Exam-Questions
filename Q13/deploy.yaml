@@ -38,7 +38,7 @@ metadata:
   labels:
     app: other
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: other
@@ -50,6 +50,9 @@ spec:
       containers:
       - name: busybox
         image: busybox:latest
+        command: [ "/bin/sh", "-c" ]
+        args:
+        - while true; do echo "Message from other"; sleep 5; done
         resources:
           limits:
             cpu: 100m
