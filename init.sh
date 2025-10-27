@@ -12,7 +12,6 @@ printf '\nQ4\n'
 kubectl create ns autoscale
 kubectl apply -f ./CKA-Exam-Questions/Q4/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q4/svc.yaml
-cat ./CKA-Exam-Questions/Q4/README.md
 
 # Q5
 printf '\nQ5\n'
@@ -20,7 +19,6 @@ kubectl create ns nginx-static
 kubectl apply -f ./CKA-Exam-Questions/Q5/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q5/svc.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q5/cm.yaml
-cat ./CKA-Exam-Questions/Q5/README.md
 
 # Q6
 printf '\nQ6\n'
