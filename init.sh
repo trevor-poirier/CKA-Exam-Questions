@@ -10,6 +10,7 @@ printf '\n'
 sudo rm /etc/cni/net.d/calico-kubeconfig
 for crd in $(kubectl get crds -o name | grep "projectcalico.org"); do kubectl delete $crd; done
 kubectl delete deploy,ds,cm -l k8s-app=calico-kube-controllers -n kube-system
+kubectl delete pod -l k8s-app=calico-kube-controllers -n kube-system --force
 cat ./CKA-Exam-Questions/Q3/README.md
 printf '\n'
 
