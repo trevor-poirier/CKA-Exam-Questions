@@ -24,7 +24,7 @@ printf '\n'
 kubectl create ns nginx-static
 kubectl apply -f ./CKA-Exam-Questions/Q5/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q5/svc.yaml
-kubectl apply -f ./CKA-Exam-Questions/Q5/nginx-config.yaml
+kubectl apply -f ./CKA-Exam-Questions/Q5/cm.yaml
 cat ./CKA-Exam-Questions/Q5/README.md
 printf '\n'
 
@@ -80,15 +80,15 @@ printf '\n'
 kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.4.0/standard-install.yaml
 kubectl create secret tls web-tls --cert=./CKA-Exam-Questions/Q14/tls.crt --key=./CKA-Exam-Questions/Q14/tls.key -n default
 kubectl apply -f ./CKA-Exam-Questions/Q14/deploy.yaml
-kubectl apply -f ./CKA-Exam-Questions/Q14/.yaml
+kubectl apply -f ./CKA-Exam-Questions/Q14/svc.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q14/ingress.yaml
+kubectl apply -f ./CKA-Exam-Questions/Q14/gateway-class.yaml
 cat ./CKA-Exam-Questions/Q14/README.md
 printf '\n'
 
 # Q15
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.19.1/cert-manager.yaml
 kubectl delete mutatingwebhookconfiguration,validatingwebhookconfiguration,deploy,clusterrolebinding,clusterrole,rolebinding,role,svc,serviceaccount -l app.kubernetes.io/instance=cert-manager -n cert-manager
-kubectl delete mutatingwebhookconfiguration,validatingwebhookconfiguration,deploy,clusterrolebinding,clusterrole,rolebinding,role,svc,serviceaccount -l app.kubernetes.io/instance=cert-manager
 cat ./CKA-Exam-Questions/Q15/README.md
 printf '\n'
 
@@ -103,6 +103,10 @@ kubectl apply -f ./CKA-Exam-Questions/Q16/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 cat ./CKA-Exam-Questions/Q16/README.md
 printf '\n'
+
+# Command to copy to re-print a question
+printf 'To review a specific question later on, run this command, where "Q#" is the letter Q followed by the question number (i.e. Q12):'
+printf 'cat ./CKA-Exam-Questions/Q#/README.md'
 
 # Last thing to run from Q1 because it will break cluster
 DIR=$(shuf -i 1-8 -n 1)
