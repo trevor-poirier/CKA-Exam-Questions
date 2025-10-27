@@ -87,6 +87,7 @@ kubectl apply -f ./CKA-Exam-Questions/Q16/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 
 # Second to last thing to run from Q2 before breaking cluster
+sleep 15
 sudo rm /etc/cni/net.d/calico-kubeconfig
 for crd in $(kubectl get crds -o name | grep "projectcalico.org"); do kubectl delete $crd; done
 kubectl delete deploy,ds,cm -l k8s-app=calico-kube-controllers -n kube-system
