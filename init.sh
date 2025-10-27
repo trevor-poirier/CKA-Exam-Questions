@@ -104,6 +104,9 @@ kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 cat ./CKA-Exam-Questions/Q16/README.md
 printf '\n'
 
+# Sleep for a minute to allow time for things to get up and running before breaking cluster
+sleep 60
+
 # Last thing to run from Q1 because it will break cluster
 DIR=$(shuf -i 1-8 -n 1)
 FILE=$(ls CKA-Exam-Questions/Q1/Scenarios/$DIR)
