@@ -4,6 +4,9 @@ Instructions to use this practice exam:
 3) Run sh CKA-Exam-Questions/init.sh in the playground terminal to create resources for each scenario and print the questions
 4) Attempt to solve using only the official kubernetes.io (and helm) documentation
 
+You can use this YouTube series as a point of reference, or to see how to solve each question:
+https://www.youtube.com/watch?v=kDZEiXHpEks&list=PLSsEvm2nF_8nGkhMyD1sq-DqjwQq8fAii
+
 16 questions. In the exam you will have 120 minutes to solve all the questions. Try to do it in the 60 minutes
 available in the free killercoda linux shell provided above.
 
