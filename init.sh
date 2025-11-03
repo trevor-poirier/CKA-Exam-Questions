@@ -92,9 +92,10 @@ kubectl delete deploy,ds,cm -l k8s-app=calico-kube-controllers -n kube-system
 kubectl delete pod -l k8s-app=calico-kube-controllers -n kube-system --force
 
 # Last thing to run from Q1 because it will break cluster
-DIR=$(shuf -i 1-8 -n 1)
-FILE=$(ls CKA-Exam-Questions/Q1/Scenarios/$DIR)
-cp -f CKA-Exam-Questions/Q1/Scenarios/$DIR/$FILE /etc/kubernetes/manifests/$FILE
+SCENARIO=$(shuf -i 1-8 -n 1)
+EXTRA=$(shuf -i 1-8 -n 1)
+sh CKA-Exam-Questions/Q1/Scenarios/$SCENARIO.sh
+sh CKA-Exam-Questions/Q1/Extras/$EXTRA.sh
 
 # Sleep for troubleshooting resource creation, then clear before showing all questions again
 sleep 5
