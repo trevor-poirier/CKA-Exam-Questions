@@ -72,6 +72,7 @@ kubectl apply -f ./CKA-Exam-Questions/Q14/gateway-class.yaml
 printf '\nQ15\n'
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.19.1/cert-manager.yaml
 kubectl delete mutatingwebhookconfiguration,validatingwebhookconfiguration,deploy,clusterrolebinding,clusterrole,rolebinding,role,svc,serviceaccount -l app.kubernetes.io/instance=cert-manager -n cert-manager
+kubectl delete pod -l app.kubernetes.io/instance=cert-manager -n cert-manager --force
 
 # Q16
 printf '\nQ16\n'
