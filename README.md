@@ -13,9 +13,9 @@ https://www.youtube.com/watch?v=kDZEiXHpEks&list=PLSsEvm2nF_8nGkhMyD1sq-DqjwQq8f
 16 questions. In the actual exam you will have 120 minutes to solve all the questions. Try to do it in the 60 minutes
 available in the free killercoda linux shell provided above. 
 
-In the actual exam, shoot for **6 minutes per question** (and **10 minutes for "Fix kubeadm cluster" question**. This leaves **20 review minutes** at the end to check your work.
+In the <ins>actual exam</ins>, shoot for **6 minutes per question** (and **10 minutes for "Fix kubeadm cluster" question**. This leaves **20 review minutes** at the end to check your work.
 
-In this practice exam, try to cut those times in half - allowing **3 minutes per question** (and **5 minutes for "Fix kubeadm cluster" question**). Leaving **10 review minutes** at the end to check your work.
+In this <ins>practice exam</ins>, try to cut those times in half - allowing **3 minutes per question** (and **5 minutes for "Fix kubeadm cluster" question**). Leaving **10 review minutes** at the end to check your work.
 
 *Make sure you solve question #1 FIRST*. The cluster is broken and you must troubleshoot by checking the status of the kube-apiserver.yaml,
 etcd.yaml, and kube-scheduler.yaml manifest files. This question is weighted the heaviest on the exam, so you need to
