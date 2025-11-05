@@ -1,4 +1,4 @@
-## Instructions to use this practice exam:
+# Instructions to use this practice exam:
 1) Open up a kubernetes playground here https://killercoda.com/killer-shell-cka/scenario/playground - create account if you haven't
 2) Run ```git clone https://github.com/trevor-poirier/CKA-Exam-Questions.git``` on the terminal in the playground to import questions and resources
 3) Run ```sh CKA-Exam-Questions/init.sh``` in the playground terminal to create resources for each scenario and print the questions
