@@ -1,5 +1,6 @@
 
-Question #9
+Question #9 (of 16)
+[Storage | 10% Weight | 3.1 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A user accidentally deleted the MariaDB Deployment in the mariadb namespace, 
 which was configured with persistent storage. Your responsibility is to

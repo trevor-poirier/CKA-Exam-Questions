@@ -1,5 +1,6 @@
 
-Question #10
+Question #10 (of 16)
+[Workloads and Scheduling | 15% Weight | 4.7 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A WordPress application with 3 replicas in the relative-fawn namespace needs
 resources divided more evenly.

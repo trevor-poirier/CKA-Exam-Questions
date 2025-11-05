@@ -1,5 +1,6 @@
 
-Question #1 ***MUST DO FIRST - Cluster broken***
+Question #1 (of 16) ***MUST DO FIRST - Cluster broken***
+[Troubleshooting | 30% Weight | 9.4 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A kubeadm cluster was migrated to a new machine. Requires configuration changes 
 to run successfully. 

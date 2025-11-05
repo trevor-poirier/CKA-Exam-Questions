@@ -1,5 +1,6 @@
 
-Question #4
+Question #4 (of 16)
+[Workloads and Scheduling | 15% Weight | 4.7 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Create a new HorizontalPodAutoscale (HPA) named apache-server in the 
 autoscale namespace. This HPA must target existing deployment apache-server 

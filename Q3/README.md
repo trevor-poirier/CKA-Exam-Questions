@@ -1,5 +1,6 @@
 
-Question #3
+Question #3 (of 16)
+[Cluster Architecture, Installation, and Configuration | 25% Weight | 7.8 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Prepare the Linux system for Kubernetes. Docker is already installed, but you
 need to configure it for kubeadm.

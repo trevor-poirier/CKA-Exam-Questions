@@ -1,5 +1,6 @@
 
-Question #2
+Question #2 (of 16)
+[Cluster Architecture, Installation, and Configuration | 25% Weight | 7.8 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Install and configure a Container Network Interface (CNI) of your choice that meets 
 the specified requirements:

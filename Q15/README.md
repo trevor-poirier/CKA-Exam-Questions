@@ -1,5 +1,6 @@
 
-Question #15
+Question #15 (of 16)
+[Cluster Architecture, Installation, and Configuration | 25% Weight | 7.8 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Verify the cert-manager application which has been deployed in the cluster.
 

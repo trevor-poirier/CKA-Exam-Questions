@@ -1,5 +1,6 @@
 
-Question #11
+Question #11 (of 16)
+[Storage | 10% Weight | 3.1 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Create a new StorageClass low-latency that uses the existing provisioner
 rancher.io/local-path

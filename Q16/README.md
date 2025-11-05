@@ -1,5 +1,6 @@
 
-Question #16
+Question #16 (of 16)
+[Servicing and Networking | 20% Weight | 6.3 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We have frontend and backend Deploy in separate Namespaces (frontent and backend).
 They need to communicate. Inspect the frontend and backend Deployments to understand

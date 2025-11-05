@@ -1,5 +1,6 @@
 
-Question #12
+Question #12 (of 16)
+[Servicing and Networking | 20% Weight | 6.3 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Reconfigure the existing Deployment front-end in the Namespace spline-reticulator
 to expose port 80/tcp of the existing container nginx.

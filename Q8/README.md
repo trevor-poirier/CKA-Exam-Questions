@@ -1,5 +1,6 @@
 
-Question #8
+Question #8 (of 18)
+[Troubleshooting | 30% Weight | 9.4 pts]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A legacy app needs to be integrated into the Kubernetes built-in logging
 architecture (i.e. kubectl logs). Update the existing Deployment synergy-deployment,
