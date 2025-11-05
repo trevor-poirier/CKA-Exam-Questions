@@ -14,6 +14,7 @@ https://www.youtube.com/watch?v=kDZEiXHpEks&list=PLSsEvm2nF_8nGkhMyD1sq-DqjwQq8f
 available in the free killercoda linux shell provided above. 
 
 **In the actual exam, shoot for 6 minutes per question for all questions outside of the "Fix kubeadm cluster" question, allowing 10 minutes for that. This leaves 20 minutes at the end to review your work.**
+
 **In this practice exam, try to cut those times in half - allowing 3 minutes per question (and 5 minutes for "Fix kubeadm cluster" question). Leaving 10 minutes at the end to review your work.**
 
 ****Make sure you solve question #1 FIRST****. The cluster is broken and you must troubleshoot by checking the status of the kube-apiserver.yaml,
