@@ -5,7 +5,7 @@
 4) Wait for the script to finish. You will see it creating resources, and then after a brief pause, it will print out the exam questions
 5) It will be easiest to open up a second terminal tab to solve the questions, keeping the first tab with the displayed questions to refer to
 6) Now you can begin. Attempt to solve using only the official kubernetes.io (and helm) documentation
-7) Troubleshooting & Cluster Setup/Configuration/Installation questions = highest priority based on weight. Storage questions = lowest priority.
+7) Troubleshooting & Cluster Setup/Configuration/Installation questions = highest priority based on weight, Storage questions = lowest priority
 
 You can use this YouTube series as a point of reference, or to see how to solve each question:
 
