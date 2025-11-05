@@ -101,7 +101,7 @@ sh CKA-Exam-Questions/Q1/Extras/$EXTRA.sh
 # Sleep for troubleshooting resource creation, then clear before showing all questions again
 sleep 5
 clear
-printf '\nNow you can begin. Attempt to solve using only the official kubernetes.io (and helm) documentation.'
+printf '\n\nNow you can begin. Attempt to solve using only the official kubernetes.io (and helm) documentation.'
 printf '\nIt will be easiest to open up a second terminal tab to solve the questions, keeping this first tab with the displayed questions to refer to.\n'
 printf '\nTroubleshooting & Cluster Setup/Configuration/Installation questions = highest priority based on weight. Storage questions = lowest priority.\n'
 printf '\nAllow 3 minutes per question (and 5 minutes for "Fix kubeadm cluster" question), leaving 10 review minutes at the end to check your work.\n\n'
