@@ -8,6 +8,7 @@
 7) Troubleshooting & Cluster Setup/Configuration/Installation questions = highest priority based on weight. Storage questions = lowest priority.
 
 You can use this YouTube series as a point of reference, or to see how to solve each question:
+
 https://www.youtube.com/watch?v=kDZEiXHpEks&list=PLSsEvm2nF_8nGkhMyD1sq-DqjwQq8fAii
 
 ### Other Important Notes
