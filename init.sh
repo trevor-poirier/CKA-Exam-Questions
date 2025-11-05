@@ -101,6 +101,8 @@ sh CKA-Exam-Questions/Q1/Extras/$EXTRA.sh
 # Sleep for troubleshooting resource creation, then clear before showing all questions again
 sleep 5
 clear
+printf '\nTroubleshooting & Cluster Setup/Configuration/Installation questions = highest priority based on weight. Storage questions = lowest priority.\n\n'
+printf '\nAllow 3 minutes per question (and 5 minutes for "Fix kubeadm cluster" question), leaving 10 review minutes at the end to check your work.\n\n'
 cat ./CKA-Exam-Questions/Q1/README.md
 cat ./CKA-Exam-Questions/Q2/README.md
 cat ./CKA-Exam-Questions/Q3/README.md
