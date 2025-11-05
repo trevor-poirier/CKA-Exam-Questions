@@ -124,3 +124,4 @@ cat ./CKA-Exam-Questions/Q16/README.md
 
 # Command to copy to re-print a question
 printf '\nTo review a specific question later on, run this command below.\nWhere "Q#" is the letter Q followed by the question number (i.e. Q12):\n\ncat ./CKA-Exam-Questions/Q#/README.md\n\n'
+printf '\nTo list all questions again, run sh CKA-Exam-Questions/QUESTIONS.sh\n\n'
