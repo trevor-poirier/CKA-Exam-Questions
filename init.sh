@@ -85,7 +85,7 @@ kubectl label namespace database namespace=database
 kubectl apply -f ./CKA-Exam-Questions/Q16/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 
-# Installing last to avoid errors with Ingress creation earlier on
+# From question number 6 - Installing last to avoid errors with Ingress creation earlier on
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.14.0/deploy/static/provider/cloud/deploy.yaml
 
 echo "First Argument: $1"
