@@ -25,6 +25,7 @@ printf '\nQ6\n'
 kubectl create ns echo-sound
 kubectl apply -f ./CKA-Exam-Questions/Q6/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q6/svc.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.14.0/deploy/static/provider/cloud/deploy.yaml
 
 # Q7
 printf '\nQ7\n'
