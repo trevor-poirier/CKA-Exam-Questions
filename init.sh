@@ -86,18 +86,25 @@ kubectl label namespace database namespace=database
 kubectl apply -f ./CKA-Exam-Questions/Q16/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 
-# Second to last thing to run from Q2 before breaking cluster
-sleep 15
-sudo rm /etc/cni/net.d/calico-kubeconfig
-for crd in $(kubectl get crds -o name | grep "projectcalico.org"); do kubectl delete $crd; done
-kubectl delete deploy,ds,cm -l k8s-app=calico-kube-controllers -n kube-system
-kubectl delete pod -l k8s-app=calico-kube-controllers -n kube-system --force
+echo "First Argument: $1"
 
-# Last thing to run from Q1 because it will break cluster
-SCENARIO=$(shuf -i 1-8 -n 1)
-EXTRA=$(shuf -i 1-8 -n 1)
-sh CKA-Exam-Questions/Q1/Scenarios/$SCENARIO.sh
-sh CKA-Exam-Questions/Q1/Extras/$EXTRA.sh
+if [ -n "$1" ]; then
+    echo "Will not break cluster so you can practice specific questions (from question #3 and on)."
+else
+    echo "Breaking cluster now to begin entire practice exam."
+    # Second to last thing to run from Q2 before breaking cluster
+    sleep 15
+    sudo rm /etc/cni/net.d/calico-kubeconfig
+    for crd in $(kubectl get crds -o name | grep "projectcalico.org"); do kubectl delete $crd; done
+    kubectl delete deploy,ds,cm -l k8s-app=calico-kube-controllers -n kube-system
+    kubectl delete pod -l k8s-app=calico-kube-controllers -n kube-system --force
+
+    # Last thing to run from Q1 because it will break cluster
+    SCENARIO=$(shuf -i 1-8 -n 1)
+    EXTRA=$(shuf -i 1-8 -n 1)
+    sh CKA-Exam-Questions/Q1/Scenarios/$SCENARIO.sh
+    sh CKA-Exam-Questions/Q1/Extras/$EXTRA.sh
+fi
 
 # Sleep for troubleshooting resource creation, then clear before showing all questions again
 sleep 5
