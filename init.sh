@@ -89,6 +89,7 @@ kubectl apply -f ./CKA-Exam-Questions/Q16/svc.yaml
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.14.0/deploy/static/provider/cloud/deploy.yaml
 kubectl apply -f ./CKA-Exam-Questions/Q6/ingress-controller.yaml -n ingress-nginx
 
+printf '\n'
 echo "First Argument: $1"
 
 if [ -n "$1" ]; then
