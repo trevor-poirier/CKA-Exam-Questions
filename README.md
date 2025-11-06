@@ -26,3 +26,5 @@ solve this one correctly. You must troubleshoot without the use of kubectl - as 
 
 - *It is best to do question #2 SECOND* - although it is not required. The scenario in this question doesn't break the cluster,
 but it does leave you without a CNI plugin installed. Which may cause some issues with the rest of the questions.
+
+- If you want to practice specific questions (other than first 2 that break cluster) and open a working cluster with exam resources, run ```sh CKA-Exam-Questions/init.sh no-break```, or pass any argument to ```init.sh``` script.
