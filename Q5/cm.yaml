@@ -11,7 +11,7 @@ data:
             listen 443 ssl;
             ssl_certificate /etc/nginx/tls/tls.crt
             ssl_certificate_key /etc/nginx/tls/tls.key;
-            ssl_protocols TLSv1.3 TLSv1.2;
+            ssl_protocols TLSv1.3;
             location / {
                 root /usr/share/nginx/html;
                 index index.html;
