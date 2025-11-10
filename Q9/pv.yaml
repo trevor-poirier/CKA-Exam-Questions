@@ -12,3 +12,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   hostPath:
     path: /mnt/data/mariadb
+  storageClassName: local-path
