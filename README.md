@@ -1,4 +1,4 @@
-# CKAD-Exam-Questions
+# CKA-Exam-Questions
 Practice for the CKA exam
 
 # Instructions to use this practice exam:
